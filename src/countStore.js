@@ -4,7 +4,7 @@ export default class counterStore {
   count = 0;
 
   constructor() {
-    makeObservable({
+    makeObservable(this, {
       count: observable,
       isNegative: computed,
       increase: action,
