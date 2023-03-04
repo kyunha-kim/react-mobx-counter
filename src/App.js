@@ -1,8 +1,9 @@
 import { observer } from "mobx-react";
 import "./App.css";
+import { useCounterStore } from "./context/counterContext";
 
-function App(props) {
-  const { myCounter } = props;
+function App() {
+  const myCounter = useCounterStore();
 
   return (
     <div style={{ textAlign: "center", padding: 16 }}>
