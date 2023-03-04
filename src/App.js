@@ -1,3 +1,4 @@
+import { observer } from "mobx-react";
 import "./App.css";
 
 function App(props) {
@@ -17,4 +18,4 @@ function App(props) {
   );
 }
 
-export default App;
+export default observer(App);
